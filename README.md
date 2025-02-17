@@ -15,6 +15,6 @@ Welcome to **Seczity's Open Source Discord Bot**, a powerful and customizable op
 - [Discord Developer Application](https://discord.com/developers/applications) with a bot token.
 
 ## 🎭 Setup
-1. Install the repo.
-2. Put Your Discord bot's token On the Index.js file then save.
-3. Open OpenYourBot
+- 1. Install the repo.
+- 2. Put Your Discord bot's token On the Index.js file then save.
+- 3. Open OpenYourBot
