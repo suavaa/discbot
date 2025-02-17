@@ -18,3 +18,4 @@ Welcome to **Seczity's Open Source Discord Bot**, a powerful and customizable op
 1. Install the repo.
 2. Put Your Discord bot's token On the Index.js file then save.
 3. Open OpenYourBot
+4. You're done !
