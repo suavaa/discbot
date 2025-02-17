@@ -13,7 +13,6 @@ Welcome to **Seczity's Open Source Discord Bot**, a powerful and customizable op
 ## Prerequisites
 - [Node.js](https://nodejs.org/) (v16+ recommended)
 - [Discord Developer Application](https://discord.com/developers/applications) with a bot token.
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
 ## 🎭 Setup
 1. Install the repo.
