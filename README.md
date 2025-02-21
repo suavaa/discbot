@@ -16,5 +16,9 @@ Welcome to **Seczity's Open Source Discord Bot**, a powerful and customizable op
 
 ## 🎭 Setup
 - 1. Install the repo.
-- 2. Put Your Discord bot's token On the Index.js file then save.
-- 3. Open OpenYourBot
+- Put Your Discord bot's token On the Index.js file then save.
+- Open OpenYourBot.bat
+
+## If you got any issues :
+- See if you really put the token on the index.js
+- If you got any other issues then go look up on the forum 
