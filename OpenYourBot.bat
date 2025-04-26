@@ -1,5 +1,5 @@
 @echo off
-title West Bot Launcher
+title Your bot
 cls
 
 node index.js
