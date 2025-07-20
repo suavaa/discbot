@@ -10,7 +10,7 @@ client.on('ready', () => {
 });
 
 client.on("guildMemberAdd", member => {
-    console.log("Un nouveau membre est arrivé");
+    console.log("A new member joined the server!");
     member.roles.add("833132032334495744").then(mbr => {
             console.log("Role given to" + mbr.displayName);
     }).catch(() => {
@@ -40,18 +40,18 @@ if(message.member.hasPermission("ADMINISTRATOR")){
             let mention = message.mentions.members.first();
             
             if(mention == undefined){
-                message.reply("Membre non ou mal mentionné.");
+                message.reply("Member Either Badly Mentionned Or Not Mentionned");
             }
             else {
                 mention.roles.add("833332173376454656");
-                message.reply(mention.displayName + " mute avec succés.");
+                message.reply(mention.displayName + "Has been mute with success.");
             }
         }
     else if(message.content.startsWith(prefix + "unmute")) {
         let mention = message.mentions.members.first();
 
         if(mention == undefined){
-            message.reply("Membre non ou mal mentionné.");
+            message.reply("Member Either Badly Mentionned Or Not Mentionned");
         }
         else {
             mention.roles.remove("833332173376454656");
@@ -154,5 +154,5 @@ const TOKEN = "Your Token"
 
 if(message.content === prefix + 'infos') {
       message.channel.bulkDelete(0)
-      message.channel.send("Hey, i'm your bot. Nice to meet you. I've been developped by seczity using neovim.")
+      message.channel.send("Write there anything.")
 }
