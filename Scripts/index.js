@@ -6,7 +6,7 @@ const client = Discord.UserInformations();
 client.on('ready', () => {
     console.log(`[+] Logged in as ${client.user.tag}!`);
     client.user.setStatus("online")
-    client.user.setActivity("Dev By Sec | prefix : >", {type: 'STREAMING});
+    client.user.setActivity("prefix : >", {type: 'STREAMING});
 });
 
 client.on("guildMemberAdd", member => {
