@@ -55,7 +55,7 @@ if(message.member.hasPermission("ADMINISTRATOR")){
         }
         else {
             mention.roles.remove("833332173376454656");
-            message.reply(mention.displayName + " unmute avec succés.");
+            message.reply(mention.displayName + "Has been unmuted with success.");
         }
     }
 }
@@ -68,7 +68,7 @@ else if(message.content.startsWith(prefix + "ban")) {
     else {
         if(mention.bannable){
             mention.ban();
-            message.channel.send(mention.displayName + " a été ban avec succés.");
+            message.channel.send(mention.displayName + " Has been banned with success.");
         }
         else {
             message.reply("Impossible de ban ce membre.");
@@ -86,8 +86,8 @@ else if(message.content.startsWith(prefix + "ban")) {
       .setTitle("Règlement")
       .setURL('https://discord.com/terms')
       .setThumbnail('https://cdn.discordapp.com/attachments/809872785820221470/811676323986669568/sdzterms.jpg')
-      .addField('\u200B', `N°1 : Ne Pas Spamer Le Chat = Kick\nN°2 : Ne Pas Faire De Pub Dans Le Chat = Kick , Et Si Continue Ban 1 Heure\nN°3 : Respecter Les Grades Des Autres\nN°4 : Ne Pas Se Venter De Son Grade = Kick \nN°5 : Ne Pas Insulter Les Personnes = Ban 24 Heures Y Compris Discord\n \n**Discord Terms**\n[[Discord Terms]](https://discord.com/terms)`)
-      .addField('\u200B', 'Ajoute La Réaction Pour Accéder Au Serveur !!!\n \u200B')
+      .addField('\u200B', `Put Your Own Rules there.`)
+      .addField('\u200B', 'React to this message to get access to this server\n \u200B')
       //.setImage('https://cdn.discordapp.com/attachments/809872785820221470/810257161950330880/battlenet.png')
       .setTimestamp()
       .setFooter('Date')
@@ -112,8 +112,13 @@ if(message.content === prefix + 'help adm') {
     .setAuthor(`${message.author.tag}`, message.author.displayAvatarURL({ dynamic: true}))        
     .setTitle(`\u200B`)
     .setThumbnail('https://cdn.discordapp.com/attachments/809872785820221470/811676323986669568/sdz.jpg')        
-    .addField('\u200B', `**[+] >help : Affiche Les Commandes\n[+] >help adm : Affiche Les Commandes Admin\n[+] >clear : Efface 99 Messages\n[+] >terms : Envoie Le Règlement\n[+] >ping.bot : Envoie Le Ping Du Bot\n[+] >kick @user : Kick Un Utilisateur\n[+] >mute @user : Mute Un Utilisateur**`)
-    .addField(`\u200B`, `\u200B`)
+.addField('\u200B', `**[+] >help : Displays All Commands
+[+] >help adm : Displays Admin Commands
+[+] >clear : Deletes 99 Messages
+[+] >terms : Sends the Rules
+[+] >ping.bot : Sends the Bot's Ping
+[+] >kick @user : Kicks a User
+[+] >mute @user : Mutes a User**`)    .addField(`\u200B`, `\u200B`)
     .setTimestamp()
     .setFooter('Date')
     message.channel.send(HelpEmbed)
@@ -134,16 +139,6 @@ if (message.content === prefix + 'ping.bot') {
     .setFooter('Date')
     message.channel.send(pingbot);
     }
-}
-
-//Log
-
-if(message.member.hasPermission("ADMINISTRATOR")) {
-    if(message.content === prefix + 'log') {
-        message.channel.bulkDelete(1)
-        message.channel.send('Command in development');
-    }
-
 }
 
 });
