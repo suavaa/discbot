@@ -4,12 +4,11 @@
 ・**Custom Commands** – Easily extend functionality to suit your needs.  
 
 # Setup
-・Prerequisites: [Node.js](https://nodejs.org/) (v16+ recommended) ; [Discord Developer Application](https://discord.com/developers/applications) with a bot token.  
+・Prerequisites: NodeJS ; [Discord Developer Application](https://discord.com/developers/applications) with a bot token.  
 ・Install the repo.  
 ・Put Your Discord bot's token On the Index.js file then save.  
 ・Open OpenYourBot.bat  
   
 # Troubleshoot :  
 ・See if you really put the token on the index.js  
-・If you got any other issues then go look up on the forum.  
-  
+・If you got any other issues then go look up on the forum.   
